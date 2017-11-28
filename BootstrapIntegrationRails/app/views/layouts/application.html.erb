@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BootstrapIntegrationRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true%>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!--To Include all sass and js files-->
+
+  </head>
+
+  <body>
+	  <%= render partial: "partials/header" %>  <!--Include header to application file-->
+	  <%= yield %>
+	  <%= render partial: "partials/footer" %> <!--Include footer to application file-->
+  </body>
+</html>
