@@ -1,0 +1,19 @@
+<nav class="navbar header">
+  <div>
+    <div class="navbar-header">
+      <a class="navbar-brand logo" href=""><img src="" alt="Diamond Girl">
+      </a>
+    </div>
+    <div id="navbar2" class="navbar-collapse collapse">
+      <% if customer_signed_in? %>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><%= link_to "Cart", carts_show_path, :method => :get %></li>
+            <li><%= link_to "Sign out", destroy_customer_session_path, :method => :delete %></li>
+          </ul>
+      <% end %>
+
+    </div>
+  </div>
+  <!--/.container-fluid -->
+</nav>

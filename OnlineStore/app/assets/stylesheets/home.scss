@@ -1,0 +1,44 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.sass.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: lightcoral;
+  color: white;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 20px;
+  padding: 5px;
+  z-index: 100;
+  a{
+	color: white;
+  }
+}
+.logo{
+  img{
+	height: 90px;
+  }
+}

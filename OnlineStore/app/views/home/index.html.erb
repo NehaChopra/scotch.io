@@ -1,0 +1,21 @@
+
+<div class="centered">
+	<% if customer_signed_in? %>
+      <button type="button" class="btn btn-primary">
+        <%= link_to "List Products", products_path, :method => :get %>
+      </button>
+	<% else %>
+		<button type="button" class="btn btn-primary">
+			<%= link_to "Sign In", new_customer_session_path, :method => :get %>
+		</button>
+		<button type="button" class="btn btn-primary">
+			<%= link_to "Sign up", new_customer_registration_path, :method => :get %>
+		</button>
+	<% end %>
+</div>
+
+
+
+
+
+
