@@ -9,5 +9,8 @@ class CreateOrderLines < ActiveRecord::Migration[5.1]
 
       t.timestamps null: false
     end
+
+
+    add_index :order_lines, :order_id,                unique: true
   end
 end

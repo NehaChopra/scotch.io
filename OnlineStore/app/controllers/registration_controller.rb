@@ -15,7 +15,7 @@ class RegistrationController < Devise::RegistrationsController
 		@customer.valid?
 		if @customer.errors.blank?
 			@customer.save
-			redirect_to 'products#index'
+			render 'home#index'
 		else
 			render :action => "new"
 		end

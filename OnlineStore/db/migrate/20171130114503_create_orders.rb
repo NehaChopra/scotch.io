@@ -8,5 +8,8 @@ class CreateOrders < ActiveRecord::Migration[5.1]
 
       t.timestamps null: false
     end
+
+    add_index :orders, :date,                unique: true
+    add_index :orders, :order_no,         unique: true
   end
 end
